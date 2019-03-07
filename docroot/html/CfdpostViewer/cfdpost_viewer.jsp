@@ -95,6 +95,7 @@ function <portlet:namespace/>loadCFDPOST( jsonData, changeAlert ){
 
 		if (<portlet:namespace/>rltData.length == <portlet:namespace/>filelist.length) {
 			<portlet:namespace/>visualizer.callIframeFunc( 'drawContour', null, <portlet:namespace/>rltData );
+			<portlet:namespace/>rltData = [];
 		}
 		break;
 	default:
