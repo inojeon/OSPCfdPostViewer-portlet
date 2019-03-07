@@ -78,6 +78,9 @@ function cleanCanvas(){
 }
 
 function drawContour( rltDatas ) {
+  
+  cleanCanvas();
+
   var rltDataJson = rltDatas.map( d => new CFDData(d) );
   chart = new Chart ("#canvas", rltDataJson);
   console.log(chart);
