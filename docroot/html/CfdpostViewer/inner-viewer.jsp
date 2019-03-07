@@ -102,7 +102,10 @@ function onchange(){
 }
 
 function windowResize() {
-  
+  if (typeof chart === "undefined") {
+    return -1;
+  }
+
   var rewinWidth = parseInt(d3.select('.wb-appFrame-ViewerColumn').style('width'));
   var rewinHeight = parseInt(d3.select('.wb-appFrame-ViewerColumn').style('height'));
   const width = chart.width,
