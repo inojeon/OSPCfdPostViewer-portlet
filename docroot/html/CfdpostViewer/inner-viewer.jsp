@@ -72,6 +72,9 @@ function setNamespace( ns ){
 
 function cleanCanvas(){
   console.log("cleanCanvas");
+  chart = {};
+  document.getElementById("canvas").innerHTML = "";
+
 }
 
 function drawContour( rltDatas ) {
